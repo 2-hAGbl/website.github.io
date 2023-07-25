@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html class="style-purple-1 custom_fonts comps live_website" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/logic.js" defer></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:700|Inter:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .custom_fonts .custom-google-fonts-enabled * {
+        font-family: "Inter", Helvetica, sans-serif;
+      }
+      .custom_fonts .custom-google-fonts-enabled h1,
+      .custom_fonts .custom-google-fonts-enabled h2,
+      .custom_fonts .custom-google-fonts-enabled h3,
+      .custom_fonts .custom-google-fonts-enabled h4,
+      .custom_fonts .custom-google-fonts-enabled h5,
+      .custom_fonts .custom-google-fonts-enabled h6 {
+        font-family: "Inter", Helvetica, serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Style inputs */
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: rgb(148, 59, 220);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgb(148, 59, 220);
+      }
+
+      /* Style the container/contact section */
+      .container {
+        border-radius: 5px;
+        background-color: ffffff;
+        padding: 10px;
+      }
+
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+
+    <link rel="icon" type="image/png" href="/pics/favicon.jpeg" sizes="16x16" />
+
+    <meta property="og:type" content="website" />
+
+    <link href="https://cautious-mood.unicornplatform.page/" rel="canonical" />
+    <meta
+      name="twitter:url"
+      content="https://cautious-mood.unicornplatform.page/"
+    />
+    <meta
+      property="og:url"
+      content="https://cautious-mood.unicornplatform.page/"
+    />
+  </head>
+
+  <body class="custom-google-fonts-enabled comps" id="88192-182431">
+    <nav class="js-nav nav-02 nav-02--sticky nav-02--sticky--white">
+      <div class="container container--large">
+        <div class="nav-02__box">
+          <div class="nav-02__logo">
+            <a class="nav-02__link" href="/" target="_self">
+              <span class="nav-02__logo_text">Sarman&#39;s Portfolio </span>
+            </a>
+          </div>
+          <div class="nav-02__links js-menu">
+            <div class="nav-02__list_wrapper">
+              <ul class="nav-02__list nav-02__list--desktop">
+                <li class="nav-02__item">
+                  <a class="button button--black-outline button--empty" href="/"
+                    ><span class="button__text">Home</span>
+                  </a>
+                </li>
+
+                <li class="nav-02__item">
+                  <a
+                    class="button button--black-outline button--empty"
+                    href="about.html"
+                    ><span class="button__text">About</span>
+                  </a>
+                </li>
+
+                <li class="nav-02__item">
+                  <a
+                    class="button button--black-outline button--empty"
+                    href="/contact"
+                    ><span class="button__text">Contact</span>
+                  </a>
+                </li>
+
+                <li class="nav-02__item">
+                  <div class="buttons-set">
+                    <ul class="buttons-set__list">
+                      <li class="buttons-set__item">
+                        <a
+                          data-stripe-product-id=""
+                          data-stripe-mode="payment"
+                          data-successful-payment-url=""
+                          data-cancel-payment-url=""
+                          class="button button--accent-outline"
+                          href="projects.html"
+                          ><span class="button__text">Projects</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav-02__list nav-02__list--mobile">
+                <li class="nav-02__item">
+                  <a class="button button--black-outline button--empty" href="/"
+                    ><span class="button__text">Home</span>
+                  </a>
+                </li>
+
+                <li class="nav-02__item">
+                  <a
+                    class="button button--black-outline button--empty"
+                    href="about.html"
+                    ><span class="button__text">About</span>
+                  </a>
+                </li>
+
+                <li class="nav-02__item">
+                  <a
+                    class="button button--black-outline button--empty"
+                    href="/contact"
+                    ><span class="button__text">Contact</span>
+                  </a>
+                </li>
+
+                <li class="nav-02__item">
+                  <div class="buttons-set">
+                    <ul class="buttons-set__list">
+                      <li class="buttons-set__item">
+                        <a
+                          data-stripe-product-id=""
+                          data-stripe-mode="payment"
+                          data-successful-payment-url=""
+                          data-cancel-payment-url=""
+                          class="button button--accent-outline"
+                          href="projects.html"
+                          ><span class="button__text">Projects</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-02__burger">
+              <button class="burger burger--black js-open-menu" type="button">
+                <div class="burger__box">
+                  <div class="burger__inner"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="page-component__bg_image_box bg-white-color first_component"
+      id="cta_form-04-479181"
+    >
+      <div class="page-component__bg_overlay_box" style=""></div>
+
+      <div
+        class="page-component__wrapper"
+        style="z-index: 10; padding-top: 70px; padding-bottom: 70px"
+      >
+        <div class="cta_form-04">
+          <div class="container container--mid">
+            <div class="cta_form-04__wrapper">
+              <div class="cta_form-04__top">
+                <div class="cta_form-04__heading_box">
+                  <div class="container container--small">
+                    <div class="title-box title-box--center">
+                      <h1 class="heading">Contact me</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="cta_form-04__form_box">
+                  <form
+                    class="form form--centered-button js-no-integration-form"
+                    action=""
+                    method="GET"
+                    data-sheet-id=""
+                  >
+                    <div class="form__inputs">
+                      <div class="form__input">
+                        <div class="form__input__label_box">
+                          <label
+                            class="form__input__label"
+                            for="FULL_NAME-90346-0"
+                          >
+                            <span
+                              class="form__input__label_asterix"
+                              title="This field is required."
+                              >*</span
+                            >
+
+                            Enter your full name:
+                          </label>
+                        </div>
+                        <input
+                          class="text-input js-form-input"
+                          type="text"
+                          id="FULL_NAME-90346-0"
+                          name="FULL_NAME"
+                          required
+                          placeholder="John Doe"
+                        />
+                      </div>
+
+                      <div class="form__input">
+                        <div class="form__input__label_box">
+                          <label class="form__input__label" for="EMAIL-90346-1">
+                            <span
+                              class="form__input__label_asterix"
+                              title="This field is required."
+                              >*</span
+                            >
+
+                            Enter your email:
+                          </label>
+                        </div>
+                        <input
+                          class="text-input js-form-input"
+                          type="email"
+                          id="EMAIL-90346-1"
+                          name="EMAIL"
+                          required
+                          placeholder="your@email.com"
+                        />
+                      </div>
+
+                      <div class="form__textarea">
+                        <div class="form__input__label_box">
+                          <label
+                            class="form__input__label"
+                            for="MESSAGE-90346-2"
+                          >
+                            Your Message:
+                          </label>
+                        </div>
+                        <textarea
+                          class="textarea js-form-input"
+                          id="MESSAGE-90346-2"
+                          name="MESSAGE"
+                          placeholder="Type your message here..."
+                        ></textarea>
+                      </div>
+
+                      <div class="form__button form__button--full">
+                        <button
+                          class="button js-submit-button button--accent-bg"
+                          type="submit"
+                        >
+                          <span class="button__text">send</span>
+                          <div class="spinner"></div>
+                          <div class="button__submit_success">
+                            <div class="button__success_circle"></div>
+                            <div>
+                              <svg
+                                class="button__success_tick"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 13 13"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  class="button__success_tick_path"
+                                  stroke="#FFF"
+                                  d="M0 8l5.119 3.873L11.709.381"
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke-linecap="square"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <span class="icon"
+                            ><svg
+                              viewBox="0 0 13 10"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+                                fill-rule="nonzero"
+                                fill="#00396B"
+                                class="fill-main"
+                              /></svg
+                          ></span>
+                        </button>
+                      </div>
+
+                      <div class="form__messages_box">
+                        <div class="form__messages">
+                          <div
+                            class="message message--error js-message js-error-message"
+                          >
+                            <div class="message__box">
+                              <button
+                                class="message__close js-close-message"
+                                type="button"
+                              >
+                                <img
+                                  loading="lazy"
+                                  class="message__close_icon"
+                                  src="https://dvzvtsvyecfyp.cloudfront.net/static/img/icons/corner-top--blue.svg"
+                                />
+                              </button>
+                              <div class="message__body">
+                                <div class="message__in">
+                                  <div class="message__bubble">
+                                    <div class="message__bubble_text">
+                                      <b>Error.</b> Your form has not been
+                                      submitted<img
+                                        loading="lazy"
+                                        class="emoji"
+                                        src="https://dvzvtsvyecfyp.cloudfront.net/static/img/twemoji/1f914.svg"
+                                        alt="Emoji"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="message__bubble">
+                                    <div class="message__bubble_text">
+                                      This is what the server says:
+                                      <div
+                                        class="message__bubble_error js-error-message-text"
+                                      >
+                                        There must be an @ at the beginning.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="message__out">
+                                  <div class="message__out_box">
+                                    <div class="message__bubble">
+                                      <div
+                                        class="message__bubble_text message__bubble_text--out js-reaction-text"
+                                      >
+                                        I will retry
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="message__reply_box">
+                                <div class="message__reply_word">Reply</div>
+                                <div class="message__options">
+                                  <div class="message__option">
+                                    <button
+                                      class="button js-react-on-message button--ruby-bg"
+                                      type="submit"
+                                    >
+                                      <span class="button__text">Uh oh!</span>
+                                    </button>
+                                  </div>
+                                  <div class="message__option">
+                                    <button
+                                      class="button js-react-on-message button--ruby-bg"
+                                      type="submit"
+                                    >
+                                      <span class="button__text"
+                                        >I will retry</span
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <ul class="cta_form-04__features"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black-color text-white">
+      <footer class="footer-02" id="footer" style="">
+        <div class="container">
+          <div class="footer-02__wrapper">
+            <div class="footer-02__text content_box">
+              &copy; 2023&nbsp;
+              <p>Designed and built by Sarman Bajaj</p>
+            </div>
+            <div class="social-buttons">
+              <ul class="social-buttons__list">
+                <li class="social-buttons__item">
+                  <a
+                    class="social-buttons__link social-buttons__link--email"
+                    href="mailto:hi@unicornplatform.com"
+                    ><img
+                      loading="lazy"
+                      class="social-buttons__icon"
+                      alt="email icon"
+                      src="https://dvzvtsvyecfyp.cloudfront.net/static/img/icons/social/white/email.svg"
+                  /></a>
+                </li>
+                <li class="social-buttons__item">
+                  <a
+                    class="social-buttons__link social-buttons__link--twitter"
+                    href="https://twitter.com/unicornplatform"
+                    ><img
+                      loading="lazy"
+                      class="social-buttons__icon"
+                      alt="twitter icon"
+                      src="https://dvzvtsvyecfyp.cloudfront.net/static/img/icons/social/white/twitter.svg"
+                  /></a>
+                </li>
+                <li class="social-buttons__item">
+                  <a
+                    class="social-buttons__link social-buttons__link--instagram"
+                    href="https://instagram.com/unicornplatform"
+                    ><img
+                      loading="lazy"
+                      class="social-buttons__icon"
+                      alt="instagram icon"
+                      src="https://dvzvtsvyecfyp.cloudfront.net/static/img/icons/social/white/instagram.svg"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .page-component__bg_image_box
+        .page-component__bg_image_box
+        .page-component__bg_overlay_box {
+        position: relative;
+      }
+      body .page-component__bg_overlay_box {
+        position: absolute;
+      }
+      .footer-02__text.content_box a {
+        color: inherit !important;
+      }
+      .footer-04__info {
+        font-size: 14px;
+      }
+    </style>
+  </body>
+</html>
